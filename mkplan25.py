@@ -9,7 +9,7 @@ for no,b in enumerate(SIRA,1):
   tags=[f"{lo} burcu",f"{lo} burcu günlük",f"{lo} burcu bugün",f"{lo} burcu 25 kasım","25 kasım burç yorumları","günlük burç yorumları","bugün burçları neler bekliyor",f"{lo} burcu özellikleri",f"{lo} kadını","astroloji","burç yorumu","shorts"]
   P.append(dict(saat=saat,klasor=f'{no:02d}_{b}',video=f'{b}_gunluk.mp4',kapak=f'{b}_gunluk_instagram_kapak.jpg',src=f'{d}/{b}_gunluk.mp4',srck=f'{d}/{b}_gunluk_instagram_kapak.jpg',base=base,
    ig=f"{L[0]} {em}\n{ad} burcu {GUN} günlük yorumu\n{L[5]}\nEğlence amaçlıdır.\n#shortstory #astroloji #{ht} #günlükburç #gözünötesi",
-   yt_baslik=f"{ad} Burcu Günlük Yorum {G} {em}",yt_aciklama=f"{L[0]}\n{ad} burcu için {G} günlük yorumu. {L[1]} {L[3]}\n{L[5]}\n\nEğlence amaçlıdır.\n\n#{ht} #günlükburç #burçyorumu #gözünötesi #shorts",yt_etiket=', '.join(tags)))
+   yt_baslik=f"{ad} Burcu Günlük Yorum {GUN} {em}",yt_aciklama=f"{L[0]}\n{ad} burcu için {GUN} günlük yorumu. {L[1]} {L[3]}\n{L[5]}\n\nEğlence amaçlıdır.\n\n#{ht} #günlükburç #burçyorumu #gözünötesi #shorts",yt_etiket=', '.join(tags)))
 for saat,kl,k in [("15:00","13_gokyuzu_mars_basak","mars_basak"),("18:00","14_uyum_boga_basak","boga_basak"),("21:00","15_tarot_icindeki_sorunun_cevabi","kart_sec_5")]:
   x=X[k];d=f'/mnt/user-data/outputs/y3/{k}'
   P.append(dict(saat=saat,klasor=kl,video=f'{k}.mp4',kapak=f'{k}_instagram_kapak.jpg',src=f'{d}/{k}.mp4',srck=f'{d}/{k}_instagram_kapak.jpg',base=f"2026-11-25_{saat.replace(':','')}_{k}",ig=x['ig'],yt_baslik=x['yt_baslik'],yt_aciklama=x['yt_aciklama'],yt_etiket=x['yt_etiket']))
